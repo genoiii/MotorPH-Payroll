@@ -8,4 +8,4 @@ Link to your updated project plan
 
 Your project’s GitHub repository: https://github.com/genoiii/MotorPH-Payroll.git
 
-Link to your project’s GitHub pages
+Link to your project’s GitHub pages: https://genoiii.github.io/MotorPH-Payroll/
