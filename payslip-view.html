@@ -4,15 +4,34 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MotorPH Payroll</title>
-        <link rel="stylesheet" href=
-"https://necolas.github.io/normalize.css/7.0.0/normalize.css">
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
         <link rel="stylesheet" href="styles/styles.css">
     </head>       
     
-    <body>
+    <body class="background">
 
         <!-- Sidebar -->
         <div class="sidebar large">
+            <a href="#dashboard.html" class="item">
+                <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="1em" 
+                    height="1em" 
+                    viewBox="0 0 32 32">
+                    <path 
+                        fill="currentColor" 
+                        d="M29 9H3a3 3 0 0 1-3-3V3a3 3 0 0 1 3-3h26a3 3 0 0 1 3 3v3a3 3 0 0 1-3 3M3 2a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h26a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z"/>
+                    <path 
+                        fill="currentColor" 
+                        d="M12 20H3a3 3 0 0 1-3-3v-3a3 3 0 0 1 3-3h9a3 3 0 0 1 3 3v3a3 3 0 0 1-3 3m-9-7a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z"/>
+                    <path 
+                        fill="currentColor" 
+                        d="M12 31H3a3 3 0 0 1-3-3v-3a3 3 0 0 1 3-3h9a3 3 0 0 1 3 3v3a3 3 0 0 1-3 3m-9-7a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z"/>
+                    <path 
+                        fill="currentColor" 
+                        d="M29 31h-9a3 3 0 0 1-3-3V14a3 3 0 0 1 3-3h9a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3m-9-18a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1V14a1 1 0 0 0-1-1z"/>
+                </svg>
+            <p class="small">Dashboard</p></a>  
             <a href="#profile.html" class="item">
                 <svg 
                     xmlns="http://www.w3.org/2000/svg" 
@@ -75,7 +94,235 @@
             <!-- Header -->
             <div class="header-container">
                 <h1>Payslip</h1>
-            </div>  
+            </div>
+            
+            <!-- Payslip -->
+            <div class="card-container card-container-margin card-container-padding">
+                <div class="medium left">
+                    <a style="color: black;" href="payslip.html">
+                        <svg 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            width="1em" 
+                            height="1em" 
+                            viewBox="0 0 1024 1024">
+                            <path 
+                                fill="currentColor" 
+                                d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64"/>
+                            <path 
+                                fill="currentColor" 
+                                d="m237.248 512l265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312z"/>
+                        </svg>    
+                    </a>
+                </div>
+                
+                <h4 style="padding: 6px;">  Pay Period: September 9 - September 22</h4>
+
+                <div class="medium right">
+                    <a style="color: black;" href="#print">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg" 
+                            width="1em" 
+                            height="1em" 
+                            viewBox="0 0 24 24">
+                            <path 
+                                fill="currentColor" 
+                                d="M18 3H6v4h12m1 5a1 1 0 0 1-1-1a1 1 0 0 1 1-1a1 1 0 0 1 1 1a1 1 0 0 1-1 1m-3 7H8v-5h8m3-6H5a3 3 0 0 0-3 3v6h4v4h12v-4h4v-6a3 3 0 0 0-3-3"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card-container card-container-margin card-container-space-evenly">
+                <div class="card">
+                    <h2>₱ 38,035.41</h2><br>
+                    <h4>Earnings</h4>
+                </div>
+                <div class="card">
+                    <h2>₱ 39,160.41</h2><br>
+                    <h4>Gross Pay</h4>
+                </div>
+                <div class="card">
+                    <h2>₱ 5,769.26</h2><br>
+                    <h4>Deductions</h4>
+                </div>
+                <div class="card">
+                    <h2>₱ 29,434.30</h2><br>
+                    <h4>Net Pay</h4>
+                </div>
+                <div class="card">
+                    <h2>09/09 - 09/22</h2><br>
+                    <h4>Salary Period</h4>
+                </div>
+                <div class="card">
+                    <h2>Sept. 27, 2024</h2><br>
+                    <h4>Pay Date</h4>
+                </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-evenly; margin: 10px; ">
+                <div style="display: grid; grid-template-rows: auto 1fr auto ; align-items:flex-start; width: 100%; background-color: white; margin-inline: 10px; padding: px;">
+                    <div style="display: flex; justify-content:space-between; padding-block: 20px; padding-inline-start: 20px; padding-inline-end: 5px; border-bottom: solid #cbd4ff;">                        
+                        <div>
+                            <h4>Earnings</h4>
+                        </div>                       
+                    </div>
+
+                    <div style="padding-inline-start: 20px;">                        
+                        <div style="display: flex; justify-content:space-between; padding-inline-end: 5px; padding-block: 7px; border-bottom: 1px solid #cbd4ff;">                        
+                            <div>
+                                <p>Hours Worked</p>                                                                
+                            </div>
+                            <div>
+                                <p>88.00</p>
+                            </div>                            
+                        </div>
+                        <div style="display: flex; justify-content:space-between; padding-inline-end: 5px; padding-block: 7px; border-bottom: 1px solid #cbd4ff;">                        
+                            <div>
+                                <p>Hourly Rate</p>
+                            </div>
+                            <div>
+                                <p>₱ 535.71</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div style="display: flex; justify-content:space-between; padding-block: 20px; padding-inline-start: 20px; padding-inline-end: 5px; border-top: solid #cbd4ff;">
+                        
+                        <div>
+                            <p style="font-style: italic;">Total Deductions</p>
+                        </div>
+                        <div>
+                            <p>₱ 5,769.26</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div style="display: grid; grid-template-rows: auto 1fr auto ; align-items:flex-start; width: 100%; background-color: white; margin-inline: 10px;">
+                    <div style="display: flex; justify-content:space-between; padding-block: 20px; padding-inline-start: 20px; padding-inline-end: 5px; border-bottom: solid #cbd4ff;">                        
+                        <div>
+                            <h4>Gross Salary</h4>
+                        </div>                     
+                    </div>
+
+                    <div style="padding-inline-start: 20px;">                        
+                        <div style="display: flex; justify-content:space-between; padding-inline-end: 5px; padding-block: 7px; border-bottom: 1px solid #cbd4ff;">                        
+                            <div>
+                                <p>Earnings</p>
+                            </div>
+                            <div>
+                                <p>₱ 535.71</p>
+                            </div>                            
+                        </div>
+                        <div style="display: flex; justify-content:space-between; padding-inline-end: 5px; padding-block: 7px; border-bottom: 1px solid #cbd4ff;">                        
+                            <div>
+                                <p>Rice Subsidy</p>
+                            </div>
+                            <div>
+                                <p>₱ 750.00</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; justify-content:space-between; padding-inline-end: 5px; padding-block: 7px; border-bottom: 1px solid #cbd4ff;">                        
+                            <div>
+                                <p>Phone Allowance</p>
+                            </div>
+                            <div>
+                                <p>₱ 1,000.00</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; justify-content:space-between; padding-inline-end: 5px; padding-block: 7px; border-bottom: 1px solid #cbd4ff;">                        
+                            <div>
+                                <p>Clothing Allowance</p>
+                            </div>
+                            <div>
+                                <p>₱ 500.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; justify-content:space-between; padding-block: 20px; padding-inline-start: 20px; padding-inline-end: 5px; border-top: solid #cbd4ff;">
+                        
+                        <div>
+                            <p style="font-style: italic;">Gross Salary</p>
+                        </div>
+                        <div>
+                            <p>₱ 39,160.41</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div style="display: grid; grid-template-rows: auto 1fr auto ; align-items:flex-start; width: 100%; background-color: white; margin-inline: 10px;">
+                    <div style="display: flex; justify-content:space-between; padding-block: 20px; padding-inline-start: 20px; padding-inline-end: 5px; border-bottom: solid #cbd4ff;">                        
+                        <div>
+                            <h4>Deductions</h4>
+                        </div>
+                        <div>
+                            <p>₱ 39,160.41</p>
+                        </div>                        
+                    </div>
+
+                    <div style="padding-inline-start: 20px;">                        
+                        <div style="display: flex; justify-content:space-between; padding-inline-end: 5px; padding-block: 7px; border-bottom: 1px solid #cbd4ff;">                        
+                            <div>
+                                <p>Withholding Tax</p>
+                            </div>
+                            <div>
+                                <p>₱ 4,069.26</p>
+                            </div>                            
+                        </div>
+                        <div style="display: flex; justify-content:space-between; padding-inline-end: 5px; padding-block: 7px; border-bottom: 1px solid #cbd4ff;">                        
+                            <div>
+                                <p>SSS</p>
+                            </div>
+                            <div>
+                                <p>₱ 1,000.00</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; justify-content:space-between; padding-inline-end: 5px; padding-block: 7px; border-bottom: 1px solid #cbd4ff;">                        
+                            <div>
+                                <p>PhilHealth</p>
+                            </div>
+                            <div>
+                                <p>₱ 500.00</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; justify-content:space-between; padding-inline-end: 5px; padding-block: 7px; border-bottom: 1px solid #cbd4ff;">                        
+                            <div>
+                                <p>Pag-IBIG</p>
+                            </div>
+                            <div>
+                                <p>₱ 200.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; justify-content:space-between; padding-block: 20px; padding-inline-start: 20px; padding-inline-end: 5px; border-top: solid #cbd4ff;">
+                        
+                        <div>
+                            <p style="font-style: italic;">Total Deductions</p>
+                        </div>
+                        <div>
+                            <p>₱ 5,769.26</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; margin: 20px;">
+                <div style="width: 100%;">                    
+                </div>
+
+                <div style="width: 100%; border-bottom: solid #cbd4ff;">
+                    <h2>Net Pay</h2>
+                </div>
+
+                <div style="text-align: end; width: 100%; border-bottom: solid #cbd4ff;">
+                    <h2>₱ 29,434.30</h2>
+                </div>
+            </div>
         </div>
         
     </body>
