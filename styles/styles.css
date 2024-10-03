@@ -10,10 +10,20 @@
 .medium{font-size: 30px;}
 .small{font-size: 20px;}
 
+/*** Background Color ***/
+.background{
+    background-color: #eaeef4;
+}
+
+.right{
+    position:absolute;
+    right: 30px;
+}
+
 /*** Sidebar ***/
 .sidebar{
     width: 115px;
-    background-color:darkgray;
+    background-color:#ff9239;
     height: 100%;
     position:fixed;
 }
@@ -21,10 +31,10 @@
 .item{
     width: 115px;
     display: block;    
-    color: #000;
+    color: #5271ff;
     padding: 8px 16px;
     text-decoration: none;
-    text-align: center;     
+    text-align: center;   
 }
 
 .bottom{
@@ -33,13 +43,13 @@
 }
 
 .item:hover{
-    background-color: #555;
+    background-color: #5271ff;
     color: white;
 }
 
-.item.active {
-    background-color: #ccc;
-  }
+.item.active{
+    background-color: #5271ff;
+}
 
 svg{
     display: block;
@@ -55,13 +65,66 @@ svg{
 .header-container{
     padding: 1px;
     padding-left: 20px;
+    background-color: #ffffff
 }
 
-/*** Sub-header ***/
-.sub-header-container{      
+/*** content ***/
+.content-container{      
     padding: 10px; 
     padding-left: 20px;
     margin-bottom: 20px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+/*** card ***/
+.card-container{
+    display: flex;
+    flex-wrap: wrap;  
+    background-color: #ffffff;    
+}
+
+.card-container-2{
+    display:flex;
+    background-color: #ffffff;    
+}
+
+.card-container-margin{
+    margin: 20px;
+}
+
+.card-container-padding{
+    padding: 20px;
+}
+
+.card-container-left{
+    justify-content:left;
+}
+
+.card-container-stretch{
+    justify-content:stretch;
+}
+
+.card-container-space-evenly{
+    justify-content:space-evenly;
+}
+
+.card-container-between{
+    justify-content:space-between
+}
+
+.card{
+    width: 240px;
+    border-radius: 8px; 
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    background-color: #cbd4ff;
+}
+
+.card-content{
+    padding: 20px;
+    color: white;
 }
 
 /*** Label ***/
@@ -70,8 +133,6 @@ svg{
     font-weight: bold;
 }
 
-/*** Select ***/
-
 /*** Payslip Table ***/
 table { 
     margin-left:15px;  
@@ -79,13 +140,13 @@ table {
     width: 100%;
 }
   
-th, td {
+th, td{
     text-align: left;
     padding: 10px; 
     border-bottom: 4px solid #ddd;
 }
 
-tr:hover {background-color: #ddd;}
+tr:hover{background-color: #ddd;}
 
 
 
