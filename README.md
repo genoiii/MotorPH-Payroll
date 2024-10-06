@@ -4,7 +4,7 @@ Link to your project requirements document: https://docs.google.com/document/d/1
 
 Link to your project wireframe: https://www.canva.com/design/DAGRXkg419A/NzKmf2H5D2mK3zFaPJ5deA/edit?utm_content=DAGRXkg419A&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
-Link to your updated project plan: https://docs.google.com/spreadsheets/d/1e4Co7zqdFgE8SqVrC7-RPjqFvSdiAaJ-F7c1RkRKomE/edit?usp=sharing
+Link to your updated project plan:
 
 Your project’s GitHub repository: https://github.com/genoiii/MotorPH-Payroll.git
 
